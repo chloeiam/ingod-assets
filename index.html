@@ -4,6 +4,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script>
+// Match Wix iframe scaling by detecting device pixel ratio and screen width
+(function(){
+  var w = window.screen.width;
+  var dpr = window.devicePixelRatio || 1;
+  // Wix iframe was rendering at ~320px logical width and scaling up
+  // We force viewport to 320px so browser scales it up to fill screen
+  var meta = document.querySelector('meta[name="viewport"]');
+  if(meta) meta.content = 'width=320, initial-scale=' + (w/320).toFixed(2) + ', maximum-scale=' + (w/320).toFixed(2) + ', user-scalable=no';
+})();
+</script>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>INGOD Staff</title>
 <meta name="google-signin-client_id" content="701783680589-qh7fa20urblfbaar7q8ipqatuhj155hc.apps.googleusercontent.com">
