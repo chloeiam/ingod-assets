@@ -1,11 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="zh-HK">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <style id="scale-override">
-  /* Force larger base font size to match Wix iframe scaling */
-  html { font-size: 18px; }
+  html { font-size: 20px; }
+  .qc-title{font-size:14px!important}
+  .qc-sub{font-size:12px!important}
+  .qc-icon-wrap{width:34px!important;height:34px!important}
+  .quick-card{padding:12px!important}
+  .section-title{font-size:13px!important}
+  .home-greet{font-size:18px!important}
+  .home-date{font-size:12px!important}
+  .weather-temp{font-size:17px!important}
+  .uc-title{font-size:14px!important}
+  .uc-type{font-size:12px!important}
+  .uc-day{font-size:18px!important}
+  .nav-label{font-size:12px!important}
+  .card-title{font-size:15px!important}
+  .meta-label,.meta-val,.meta-note{font-size:13px!important}
+  .btn-signup{font-size:14px!important;padding:9px!important}
+  .page-header h2{font-size:20px!important}
+  .page-header p{font-size:14px!important}
+  .ann-title{font-size:16px!important}
+  .ann-body{font-size:14px!important}
+  .ann-date,.ann-from{font-size:13px!important}
+  .news-title{font-size:13px!important}
+  .news-cat,.news-date{font-size:11px!important}
+  .ntab,.tab,.n-toggle{font-size:13px!important;padding:6px 14px!important}
+  .tool-entry-title{font-size:18px!important}
+  .tool-entry-sub{font-size:14px!important}
+  .tool-entry-icon{width:64px!important;height:64px!important;font-size:32px!important}
+  .tool-entry-card{padding:22px 18px!important}
 </style>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>INGOD Staff</title>
@@ -152,11 +179,11 @@ header{background:var(--card);padding:8px 14px;border-bottom:1px solid var(--bor
 .quick-card{transition:transform .12s,box-shadow .12s}
 .quick-card:active{transform:scale(.94)!important;box-shadow:0 1px 6px rgba(0,0,0,.1)}
 /* ── Tool Entry Cards ── */
-.tool-entry-card{display:flex;align-items:center;gap:16px;width:100%;background:var(--card);border:1px solid var(--border2);border-radius:16px;padding:20px 18px 16px;margin-bottom:12px;cursor:pointer;text-align:left;transition:transform .15s,box-shadow .15s}
+.tool-entry-card{display:flex;align-items:center;gap:16px;width:100%;background:var(–card);border:1px solid var(–border2);border-radius:16px;padding:20px 18px 16px;margin-bottom:12px;cursor:pointer;text-align:left;transition:transform .15s,box-shadow .15s}
 .tool-entry-card:active{transform:scale(.98)}
 .tool-entry-icon{width:56px;height:56px;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
-.tool-entry-title{font-size:16px;font-weight:700;color:var(--text);margin-bottom:4px}
-.tool-entry-sub{font-size:13px;color:var(--text3);line-height:1.4;margin-bottom:8px}
+.tool-entry-title{font-size:16px;font-weight:700;color:var(–text);margin-bottom:4px}
+.tool-entry-sub{font-size:13px;color:var(–text3);line-height:1.4;margin-bottom:8px}
 .tool-entry-info{flex:1}
 .tool-entry-badge{display:inline-block;font-size:11px;font-weight:600;padding:3px 9px;border-radius:20px}
 .teb-red{background:#FCEBEB;color:#A32D2D}
@@ -164,20 +191,20 @@ header{background:var(--card);padding:8px 14px;border-bottom:1px solid var(--bor
 .teb-blue{background:#E6F1FB;color:#185FA5}
 
 /* ── MDRT Calc v6 ── */
-.calc-v6-wrap{background:#fff;border-radius:14px;padding:14px;border:1px solid var(--border2)}
-.calc-v6-title{text-align:center;color:var(--primary);font-size:17px;font-weight:700;margin-bottom:10px}
+.calc-v6-wrap{background:#fff;border-radius:14px;padding:14px;border:1px solid var(–border2)}
+.calc-v6-title{text-align:center;color:var(–primary);font-size:17px;font-weight:700;margin-bottom:10px}
 .calc-input-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:5px}
 .calc-v6-group{margin-bottom:5px}
 .calc-v6-label{display:block;font-weight:600;margin-bottom:2px;color:#636366;font-size:11px}
 /* FIX 4: unified text color for all inputs & selects */
 .calc-v6-input,.calc-v6-select{width:100%;height:34px;padding:0 8px;border:1px solid #d1d1d6;border-radius:8px;box-sizing:border-box;font-size:13px;background:#f9f9f9;text-align:center;font-family:inherit;color:#1c1c1e;-webkit-appearance:none;appearance:none}
-.calc-v6-input:focus,.calc-v6-select:focus{outline:none;border-color:var(--primary);background:#fff}
+.calc-v6-input:focus,.calc-v6-select:focus{outline:none;border-color:var(–primary);background:#fff}
 .calc-date-row{display:flex;gap:6px}
-.calc-v6-btn{width:100%;padding:11px;background:var(--primary);color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;margin-top:6px}
+.calc-v6-btn{width:100%;padding:11px;background:var(–primary);color:#fff;border:none;border-radius:10px;font-size:16px;font-weight:700;cursor:pointer;margin-top:6px}
 .calc-result-box{margin-top:12px;padding:10px;background:#fafafa;border-radius:12px;border:1px solid #e5e5ea;display:none}
 .calc-result-summary{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px}
 .calc-res-item{background:#fff;padding:6px;border-radius:8px;border:1px solid #efeff4;color:#636366}
-.calc-res-item b{display:block;color:var(--primary);font-size:14px;margin-top:1px}
+.calc-res-item b{display:block;color:var(–primary);font-size:14px;margin-top:1px}
 .calc-res-item.hl{border:none;background:#f4f7f9}
 .mdrt-status-box{margin-top:10px;padding:12px;border-radius:10px;text-align:center;font-weight:800;font-size:17px;animation:breathe 2.5s infinite ease-in-out}
 @keyframes breathe{0%,100%{transform:scale(1);box-shadow:0 2px 10px rgba(0,0,0,.03)}50%{transform:scale(1.02);box-shadow:0 5px 20px rgba(0,0,0,.08)}}
@@ -186,7 +213,7 @@ header{background:var(--card);padding:8px 14px;border-bottom:1px solid var(--bor
 .sim-section{margin-top:12px;border-top:1px solid #eee;padding-top:8px}
 .sim-grid{display:flex;gap:6px;margin-top:6px}
 .sim-card{flex:1;padding:8px;background:#fff;border:1px solid #eee;border-radius:8px;text-align:center}
-.sim-card h4{margin:0;font-size:11px;color:#8e8e93}.sim-val{font-size:15px;font-weight:700;color:var(--primary)}
+.sim-card h4{margin:0;font-size:11px;color:#8e8e93}.sim-val{font-size:15px;font-weight:700;color:var(–primary)}
 .calc-table-wrap{overflow-x:auto;margin-top:10px;border-radius:8px;border:1px solid #e5e5ea}
 .calc-table{width:100%;border-collapse:collapse;font-size:11px;background:#fff}
 .calc-table th,.calc-table td{border:1px solid #e5e5ea;padding:7px 4px;text-align:center}
@@ -194,62 +221,64 @@ header{background:var(--card);padding:8px 14px;border-bottom:1px solid var(--bor
 .tbl-ok{background:#e8f5e9;color:#2e7d32;font-weight:700}.tbl-need{background:#ffebee;color:#c62828}
 /* FNA */
 .fna-tabs{display:flex;gap:6px;margin-bottom:12px}
-.fna-tab{flex:1;padding:8px;border:1px solid var(--border);border-radius:9px;background:var(--card);color:var(--text2);font-size:13px;font-weight:500;cursor:pointer;text-align:center}
-.fna-tab.active{background:var(--primary);color:#fff;border-color:var(--primary)}
-.fna-btn{display:block;width:100%;padding:10px;background:var(--primary);color:#fff;border:none;border-radius:9px;font-size:14px;font-weight:600;cursor:pointer;text-align:center;text-decoration:none}
-.fna-desc{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.5}
+.fna-tab{flex:1;padding:8px;border:1px solid var(–border);border-radius:9px;background:var(–card);color:var(–text2);font-size:13px;font-weight:500;cursor:pointer;text-align:center}
+.fna-tab.active{background:var(–primary);color:#fff;border-color:var(–primary)}
+.fna-btn{display:block;width:100%;padding:10px;background:var(–primary);color:#fff;border:none;border-radius:9px;font-size:14px;font-weight:600;cursor:pointer;text-align:center;text-decoration:none}
+.fna-desc{font-size:13px;color:var(–text2);margin-bottom:10px;line-height:1.5}
 /* AI Tips — Option D (magazine) */
-.aitip-featured{background:var(--card);border-radius:13px;border:1px solid var(--border2);margin-bottom:10px;overflow:hidden}
+.aitip-featured{background:var(–card);border-radius:13px;border:1px solid var(–border2);margin-bottom:10px;overflow:hidden}
 .aitip-feat-top{background:linear-gradient(135deg,#bf2524 0%,#8a1a1a 100%);padding:13px 14px 11px}
 .aitip-feat-label{font-size:10px;font-weight:600;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
 .aitip-feat-title{font-size:15px;font-weight:700;color:#fff;line-height:1.35;margin-bottom:7px}
 .aitip-feat-tag{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:5px;background:rgba(255,255,255,.18);color:#fff}
 .aitip-feat-body{padding:11px 14px 12px}
-.aitip-feat-text{font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:9px}
-.aitip-small{background:var(--card);border-radius:10px;border:1px solid var(--border2);padding:9px 12px;margin-bottom:6px;display:flex;align-items:center;gap:10px;cursor:pointer}
+.aitip-feat-text{font-size:12px;color:var(–text2);line-height:1.6;margin-bottom:9px}
+.aitip-small{background:var(–card);border-radius:10px;border:1px solid var(–border2);padding:9px 12px;margin-bottom:6px;display:flex;align-items:center;gap:10px;cursor:pointer}
 .aitip-small:active{opacity:.75}
-.aitip-small-dot{width:6px;height:6px;border-radius:50%;background:var(--primary);flex-shrink:0}
-.aitip-small-title{font-size:12px;font-weight:600;color:var(--text);flex:1;line-height:1.3}
+.aitip-small-dot{width:6px;height:6px;border-radius:50%;background:var(–primary);flex-shrink:0}
+.aitip-small-title{font-size:12px;font-weight:600;color:var(–text);flex:1;line-height:1.3}
 .aitip-small-tag{font-size:10px;font-weight:600;padding:2px 7px;border-radius:5px;background:#fde8e8;color:#9a1e1d;flex-shrink:0;white-space:nowrap}
-.aitip-prompt{background:var(--bg);border:1px solid var(--border);border-radius:9px;padding:10px 12px}
-.aitip-prompt-label{font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
-.aitip-prompt-text{font-size:11px;color:var(--text);line-height:1.5;margin-bottom:7px;font-family:monospace;white-space:pre-wrap;word-break:break-word}
-.aitip-copy{width:100%;padding:7px;background:var(--primary);color:#fff;border:none;border-radius:7px;font-size:12px;font-weight:600;cursor:pointer}
+.aitip-prompt{background:var(–bg);border:1px solid var(–border);border-radius:9px;padding:10px 12px}
+.aitip-prompt-label{font-size:9px;font-weight:700;color:var(–text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
+.aitip-prompt-text{font-size:11px;color:var(–text);line-height:1.5;margin-bottom:7px;font-family:monospace;white-space:pre-wrap;word-break:break-word}
+.aitip-copy{width:100%;padding:7px;background:var(–primary);color:#fff;border:none;border-radius:7px;font-size:12px;font-weight:600;cursor:pointer}
 .aitip-copy.copied{background:#2e7d32}
-.ai-filter-tag{flex-shrink:0;padding:4px 10px;border-radius:14px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid var(--border);background:var(--bg);color:var(--text2)}
-.ai-filter-tag.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.ai-filter-tag{flex-shrink:0;padding:4px 10px;border-radius:14px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid var(–border);background:var(–bg);color:var(–text2)}
+.ai-filter-tag.active{background:var(–primary);color:#fff;border-color:var(–primary)}
 /* small card expanded state */
-.aitip-small-expanded{background:var(--card);border-radius:10px;border:1px solid var(--border2);margin-bottom:6px;overflow:hidden}
+.aitip-small-expanded{background:var(–card);border-radius:10px;border:1px solid var(–border2);margin-bottom:6px;overflow:hidden}
 .aitip-small-expanded-head{display:flex;align-items:center;gap:10px;padding:9px 12px;cursor:pointer}
-.aitip-small-expanded-body{padding:0 12px 10px;border-top:1px solid var(--border2)}
-.aitip-small-expanded-text{font-size:12px;color:var(--text2);line-height:1.55;padding-top:8px;margin-bottom:7px}
+.aitip-small-expanded-body{padding:0 12px 10px;border-top:1px solid var(–border2)}
+.aitip-small-expanded-text{font-size:12px;color:var(–text2);line-height:1.55;padding-top:8px;margin-bottom:7px}
 /* Settings */
 .settings-section{margin-bottom:18px}
-.settings-section-title{font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:7px;padding:0 2px}
-.settings-card{background:var(--card);border-radius:12px;overflow:hidden;border:1px solid var(--border2)}
-.settings-row{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid var(--border2);cursor:pointer}
+.settings-section-title{font-size:11px;font-weight:600;color:var(–text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:7px;padding:0 2px}
+.settings-card{background:var(–card);border-radius:12px;overflow:hidden;border:1px solid var(–border2)}
+.settings-row{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid var(–border2);cursor:pointer}
 .settings-row:last-child{border-bottom:none}
 .settings-row-left{display:flex;align-items:center;gap:10px}
 .settings-row-icon{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.settings-row-label{font-size:14px;color:var(--text);font-weight:500}.settings-row-sub{font-size:11px;color:var(--text3);margin-top:1px}
-.settings-chevron{color:var(--text3);font-size:16px}
+.settings-row-label{font-size:14px;color:var(–text);font-weight:500}.settings-row-sub{font-size:11px;color:var(–text3);margin-top:1px}
+.settings-chevron{color:var(–text3);font-size:16px}
 .toggle{width:44px;height:26px;background:#e5e5ea;border-radius:13px;position:relative;cursor:pointer;border:none;flex-shrink:0;transition:background .2s}
-.toggle.on{background:var(--primary)}
-.toggle::after{content:'';width:22px;height:22px;background:#fff;border-radius:50%;position:absolute;top:2px;left:2px;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.toggle.on{background:var(–primary)}
+.toggle::after{content:’’;width:22px;height:22px;background:#fff;border-radius:50%;position:absolute;top:2px;left:2px;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)}
 .toggle.on::after{transform:translateX(18px)}
-.feedback-box{background:var(--card);border-radius:12px;padding:14px;border:1px solid var(--border2)}
-.feedback-box h3{font-size:13px;font-weight:600;color:var(--text);margin-bottom:5px}
-.feedback-box p{font-size:12px;color:var(--text3);margin-bottom:10px}
-.fb-submit{width:100%;padding:10px;background:var(--primary);color:#fff;border:none;border-radius:9px;font-size:13px;font-weight:600;cursor:pointer}
-.logout-btn{width:100%;padding:13px;background:var(--card);border:1px solid #fde8e8;border-radius:12px;color:var(--primary);font-size:14px;font-weight:600;cursor:pointer;margin-top:8px}
+.feedback-box{background:var(–card);border-radius:12px;padding:14px;border:1px solid var(–border2)}
+.feedback-box h3{font-size:13px;font-weight:600;color:var(–text);margin-bottom:5px}
+.feedback-box p{font-size:12px;color:var(–text3);margin-bottom:10px}
+.fb-submit{width:100%;padding:10px;background:var(–primary);color:#fff;border:none;border-radius:9px;font-size:13px;font-weight:600;cursor:pointer}
+.logout-btn{width:100%;padding:13px;background:var(–card);border:1px solid #fde8e8;border-radius:12px;color:var(–primary);font-size:14px;font-weight:600;cursor:pointer;margin-top:8px}
 
 /* ── FIX 1: CSP-safe confetti canvas ── */
 #confetti-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;display:none}
 </style>
+
 </head>
 <body>
 
 <!-- CSP-safe confetti canvas (FIX 1) -->
+
 <canvas id="confetti-canvas"></canvas>
 
 <div id="lockScreen">
@@ -376,6 +405,7 @@ header{background:var(--card);padding:8px 14px;border-bottom:1px solid var(--bor
 </div>
 
 <!-- TOOLS LIST -->
+
 <div id="toolsPage" class="overlay-page">
   <div class="overlay-hdr"><div style="width:28px"></div><span class="overlay-title">實用工具</span><button class="overlay-close" onclick="closeTools()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
   <div class="overlay-body">
@@ -410,6 +440,7 @@ header{background:var(--card);padding:8px 14px;border-bottom:1px solid var(--bor
 </div>
 
 <!-- CALC PAGE -->
+
 <div id="toolPage-calc" class="overlay-page">
   <div class="overlay-hdr">
     <button class="overlay-close" onclick="closeToolPage('calc')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
@@ -486,6 +517,7 @@ header{background:var(--card);padding:8px 14px;border-bottom:1px solid var(--bor
 </div>
 
 <!-- FNA PAGE -->
+
 <div id="toolPage-fna" class="overlay-page">
   <div class="overlay-hdr"><button class="overlay-close" onclick="closeToolPage('fna')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button><span class="overlay-title">投保 FNA</span><div style="width:28px"></div></div>
   <div class="overlay-body">
@@ -496,6 +528,7 @@ header{background:var(--card);padding:8px 14px;border-bottom:1px solid var(--bor
 </div>
 
 <!-- AI PAGE -->
+
 <div id="toolPage-ai" class="overlay-page" style="flex-direction:column">
   <div class="overlay-hdr"><button class="overlay-close" onclick="closeToolPage('ai')"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button><span class="overlay-title">AI 小貼士</span><div style="width:28px"></div></div>
   <div style="background:var(--card);padding:10px 14px;border-bottom:1px solid var(--border);flex-shrink:0">
@@ -506,6 +539,7 @@ header{background:var(--card);padding:8px 14px;border-bottom:1px solid var(--bor
 </div>
 
 <!-- SETTINGS PAGE -->
+
 <div id="settingsPage" class="overlay-page">
   <div class="overlay-hdr"><div style="width:28px"></div><span class="overlay-title">設定</span><button class="overlay-close" onclick="closeSettings()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
   <div class="overlay-body">
@@ -1008,5 +1042,6 @@ addSwipeClose("toolPage-fna",()=>closeToolPage("fna"));
 addSwipeClose("toolPage-ai",()=>closeToolPage("ai"));
 addSwipeClose("settingsPage",closeSettings);
 </script>
+
 </body>
 </html>
